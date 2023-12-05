@@ -5,7 +5,6 @@ import Home from './Pages/Home/Home';
 import NoteLayout from './Pages/Notes/NoteLayout';
 import TaskLayout from './Pages/Tasks/TaskLayout';
 import Trash from './Pages/Trash/Trash';
-import Register from './Pages/Login/Register';
 
 
 
