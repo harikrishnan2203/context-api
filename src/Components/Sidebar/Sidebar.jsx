@@ -1,64 +1,3 @@
-// import React, { useState } from "react";
-// import "./Sidebar.css";
-// import { Link } from "react-router-dom";
-// import myphoto from './ProfilePhoto.jpg'
-
-
-// export default function Sidebar() {
-//   const [activeItem, setActiveItem] = useState(0);
-
-//   const handleItemClick = (index) => {
-//     setActiveItem(index);
-//   };
-
-//   const isActive = (index) => {
-//     return index === activeItem ? "active" : "";
-//   };
-
-//   return (
-//     <div className="sidebar d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary">
-//       <div className="profile">
-//         <img 
-//         alt="Alter"
-//         src={myphoto}
-//         style={{ width: '60px', height: '60px' }}
-//         />
-//         <div className="credentials">
-//           <h4 id="name">Hari <span>Krishnan</span></h4>
-//           <p id="email">harikrishnan2285@gmail.com</p>
-//         </div>
-//       </div>
-//       <ul className="nav flex-column mb-auto">
-//         <li className="nav-item active" >
-//           <i className="fa fa-home" aria-hidden="true"></i>
-//           <Link to={'/home'}>Home</Link>
-//         </li>
-//         <li className="nav-item" >
-//           <i className="fa fa-search" aria-hidden="true"></i>
-//           <Link href="">Search</Link>
-//         </li>
-//         <li className="nav-item" >
-//           <i className="fa fa-file" aria-hidden="true"></i>
-//           <Link to={'/noteslayout'}>Notes</Link>
-//         </li>
-//         <li className="nav-item" >
-//           <i className="fa fa-check-circle" aria-hidden="true"></i>
-//           <Link to={'/tasklayout'}>Tasks</Link>
-//         </li>
-//         <li className="nav-item" >
-//           <i className="fa fa-archive" aria-hidden="true"></i>
-//           <Link href="">Archive</Link>
-//         </li>
-//         <li className="nav-item" >
-//           <i className="fa fa-trash" aria-hidden="true"></i>
-//           <Link href="">Bin</Link>
-//         </li>
-//       </ul>
-//     </div>
-//   );
-// }
-
-
 import React, { useState } from "react";
 import "./Sidebar.css";
 import { Link } from "react-router-dom";
@@ -80,6 +19,7 @@ export default function Sidebar() {
     <div className="sidebar d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary">
       <div className="profile">
         <img 
+        alt="profile"
         src={myphoto}
         style={{ width: '60px', height: '60px' }}
         />

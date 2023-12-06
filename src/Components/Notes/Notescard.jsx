@@ -22,6 +22,8 @@ export default function NotesCard({data}) {
   };
 
   useEffect(() => {
+
+    const updatedaysAgo = () => {
     if (data && data.currentDay) {
       const currentDate = new Date();
       const creationDate = new Date(data.currentDay);
@@ -43,6 +45,16 @@ export default function NotesCard({data}) {
     } else {
       setDaysAgo('Creation date unavailable');
     }
+  };
+
+  //initial Update
+  updatedaysAgo();
+
+  // setup interval to update every 30 sec
+  const intervalId = setInterval(updatedaysAgo, 3000);
+
+  return () => clearInterval(intervalId);
+
   }, [data]);
   
   return (

@@ -34,10 +34,8 @@ export default function Notesinput() {
   };
 
   const handleSubmit = (e) => {
-    const now = new Date();
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    const currentDay = now.toLocaleDateString('en-US', options);
-    const currentTime = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+    const currentDay = new Date();
+    const currentTime = currentDay.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
   
     const newNote = {
       id: note.length + 1,  // Generate a unique id
